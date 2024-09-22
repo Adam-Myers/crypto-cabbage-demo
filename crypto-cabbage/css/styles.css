@@ -1,0 +1,174 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5f4e3; /* Soft light green background */
+    color: #333;
+    height: 100vh; /* Ensure body takes full viewport height */
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Black header */
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header .left-header {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Right justify the nav links */
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    flex: 1; /* Allow main to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Reset padding */
+    margin: 0; /* Ensure no extra margins */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Styling for the banner (logo and search bar) */
+.banner {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem 1rem; /* Ensure adequate spacing */
+}
+
+/* Container for the logo and text */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem; /* Space between logo and search bar */
+}
+
+/* Logo image styling */
+.logo-img {
+    width: 150px; /* Adjust this size as needed */
+    height: auto; /* Keep the aspect ratio */
+    margin-right: -5px; /* Space between the image and text */
+}
+
+/* Styling for the logo text */
+.logo {
+    font-size: 3rem; /* Adjust to match the image size */
+    font-weight: bold;
+    color: #333; /* Black logo text */
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -1rem 0; /* Adequate margin for spacing */
+    margin-left: 30px; /* Add left margin to nudge it slightly to the right */
+}
+
+.search-bar input {
+    padding: 0.5rem; /* Reduce padding */
+    font-size: 1rem; /* Reduce font size */
+    width: 500px; /* Increase width */
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem; /* Adjust padding */
+    font-size: 1rem; /* Adjust font size */
+    border: 1px solid #333;
+    background-color: #333; /* Black button */
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #555; /* Darker hover state */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Black footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 1rem; /* Ensure padding to prevent overflow */
+}
+
+footer .twitter-icon {
+    margin-left: 1rem; /* Add space between text and icon */
+    font-size: 1.5rem; /* Increase icon size */
+    color: #fff; /* Set icon color to white */
+    text-decoration: none;
+}
+
+footer .twitter-icon:hover {
+    color: #ccc;
+}
+
+footer .whitepaper-link {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .whitepaper-link {
+    margin-left: 1rem; /* Increased space between the Twitter icon and White Paper link */
+    font-size: 1rem;
+    color: #fff; /* White font for the link */
+    text-decoration: none;
+}
+
+footer .whitepaper-link:hover {
+    color: #fff; /* Keep the font white on hover */
+    text-decoration: underline; /* Add underline effect on hover */
+}
