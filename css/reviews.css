@@ -1,0 +1,115 @@
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5f4e3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.reviews-list {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    position: relative;
+}
+
+th i {
+    margin-left: 0.5rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+footer .twitter-icon {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+footer .whitepaper-link {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .whitepaper-link {
+    margin-left: 1rem; /* Increased space between the Twitter icon and White Paper link */
+    font-size: 1rem;
+    color: #fff; /* White font for the link */
+    text-decoration: none;
+}
+
+footer .whitepaper-link:hover {
+    color: #fff; /* Keep the font white on hover */
+    text-decoration: underline; /* Add underline effect on hover */
+}

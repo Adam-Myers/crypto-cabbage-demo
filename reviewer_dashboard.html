@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviewer Dashboard - Crypto Cabbage</title>
+    <!-- Link to Font Awesome for Twitter icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link to general styles.css for header/footer layout -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Link to dashboard-specific CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <!-- Ensure the header matches the homepage -->
+    <header>
+        <div class="left-header">
+            <h1>Your Source for Honest Crypto Reviews</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Explore Reviews</a></li>
+                <li><a href="reviewers.html">Reviewers</a></li>
+                <li><a href="reviewer_dashboard.html">Reviewer Dashboard</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Reviewer Dashboard</h2>
+            <div class="profile-section">
+                <!-- Profile Picture and Name Section -->
+                <div class="profile-info">
+                    <h2>Reviewer Dashboard</h2> <!-- Add this line -->
+                    <p>Marco Romano</p>
+                    <img src="img/dashboardpfp.png" alt="Profile Picture" class="profile-pic">
+                </div>
+
+<!-- Buttons next to the profile picture -->
+<div class="buttons-container">
+    <div class="review-buttons">
+        <button id="review-randomly" class="review-button">
+            <a href="submit_review.html" style="color: inherit; text-decoration: none;">Review Randomly</a>
+        </button>
+        <button id="review-selectively" class="review-button">
+            <a href="influencer_review.html" style="color: inherit; text-decoration: none;">Review Selectively</a>
+        </button>
+    </div>
+    <div class="review-buttons">
+        <button id="show-peer-review" class="review-button">Show me a peer's review</button>
+        <button id="follow-up-review" class="review-button">Follow up on my own review</button>
+    </div>
+</div>
+
+            <div class="tier-info">
+                <h3>Current Tier: <span id="current-tier">2</span></h3>
+                <h3>Number of Reviews Completed: <span id="reviews-completed">150</span></h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar">
+                        <span id="progress-text">75%</span>
+                    </div>
+                </div>
+                <h3>Peer Reviews Complete</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="peer-reviews-bar">
+                        <span id="peer-reviews-text">50%</span>
+                    </div>
+                </div>
+                <h3>Self Review Follow Up</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="self-review-bar">
+                        <span id="self-review-text">30%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="peer-review-score">
+                <h3>Peer Review Score: <span id="peer-review-score">8.5</span></h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer should also match the homepage -->
+    <footer>
+        <p>© 2024 Crypto Cabbage. All rights reserved. 
+            <a href="https://x.com/cryptocabbage24" class="twitter-icon" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="white_paper.html" class="whitepaper-link">White Paper</a> <!-- White Paper link in footer -->
+        </p>
+    </footer>
+</body>
+</html>
